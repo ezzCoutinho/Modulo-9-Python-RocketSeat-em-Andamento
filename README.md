@@ -1,0 +1,3 @@
+## 03/04
+
+Hoje implementamos a autenticação JWT (JSON Web Token) no projeto. Utilizamos a biblioteca PyJWT para gerar tokens de autenticação e criamos uma rota específica para que os usuários possam obter seus tokens. Além disso, avançamos com a implementação da conexão com o banco de dados SQLite, onde definimos e criamos a tabela de usuários (users) para armazenar informações como nome de usuário, senha e saldo.
