@@ -9,7 +9,12 @@ class UserRepository:
     def registry_user(self, username: str, password: str) -> None:
         cursor = self.__conn.cursor()
         cursor.execute(
-            "INSERT INTO users (username, password, balance) VALUES (?, ?, ?)",
+            """
+            INSERT INTO users  
+                (username, password, balance) 
+            VALUES 
+                (?, ?, ?);
+            """,
             (username, password, 0),
         )
         self.__conn.commit()
