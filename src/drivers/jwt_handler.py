@@ -1,3 +1,4 @@
+# pylint: disable= W0102:dangerous-default-value
 from datetime import datetime, timedelta, timezone
 from typing import Dict
 
