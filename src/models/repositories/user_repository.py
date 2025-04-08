@@ -1,8 +1,10 @@
 from sqlite3 import Connection
 from typing import Tuple
 
+from src.models.interfaces.user_repository_interface import UserRepositoryInterface
 
-class UserRepository:
+
+class UserRepository(UserRepositoryInterface):
     def __init__(self, conn: Connection):
         self.__conn = conn
 
