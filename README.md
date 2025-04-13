@@ -9,3 +9,8 @@ Hoje realizamos testes de integração e unitários, incluindo a criação de us
 
 ## 08/04
 Hoje ajustamos os módulos de verificação e criação de senhas, adicionando o encode e decode em UTF-8 que estavam faltando. Criamos um controller para JWT, juntamente com seu teste unitário. Também adicionamos uma nova biblioteca, o python-dotenv, para preservar dados importantes em variáveis globais. Além disso, criamos uma pasta chamada `configs` para centralizar o carregamento das variáveis do dotenv diretamente nos arquivos. Por fim, implementamos o LoginCreatorController, responsável por realizar o login do cliente no banco de dados, garantindo verificações essenciais.
+
+
+## 12/04
+
+Hoje implementamos e executamos testes unitários para o sistema de login de usuários, verificando a autenticação correta das credenciais. Além disso, desenvolvemos o módulo de edição de saldo (balance editor), que permite atualizar o saldo dos usuários no banco de dados de forma segura e controlada.
