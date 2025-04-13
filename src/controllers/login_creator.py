@@ -45,7 +45,7 @@ class LoginCreator:
 
     def __format_response(self, username: str, token: str) -> Dict:
         return {
-            "acess": True,
+            "access": True,
             "username": username,
             "token": token,
         }
