@@ -1,8 +1,12 @@
 from typing import Dict
+
+from src.controllers.interfaces.balance_editor_interface_controller import (
+    BalanceEditorInterfaceController,
+)
 from src.models.interfaces.user_repository_interface import UserRepositoryInterface
 
 
-class BalanceEditor:
+class BalanceEditor(BalanceEditorInterfaceController):
     def __init__(self, user_repository: UserRepositoryInterface):
         self.__user_repository = user_repository
 
