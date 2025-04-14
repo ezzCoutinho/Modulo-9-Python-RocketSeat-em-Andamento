@@ -1,10 +1,14 @@
 from typing import Dict, Tuple
-from src.models.interfaces.user_repository_interface import UserRepositoryInterface
+
+from src.controllers.interfaces.login_creator_interface_controller import (
+    LoginCreatorInterfaceController,
+)
 from src.drivers.jwt_handler import JwtHandler
 from src.drivers.password_handler import PasswordHandler
+from src.models.interfaces.user_repository_interface import UserRepositoryInterface
 
 
-class LoginCreator:
+class LoginCreator(LoginCreatorInterfaceController):
     def __init__(self, user_repository: UserRepositoryInterface) -> None:
         self.__user_repository = user_repository
         self.__jwt_handler = JwtHandler()
