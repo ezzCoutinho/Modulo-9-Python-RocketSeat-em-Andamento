@@ -14,3 +14,8 @@ Hoje ajustamos os módulos de verificação e criação de senhas, adicionando o
 ## 12/04
 
 Hoje implementamos e executamos testes unitários para o sistema de login de usuários, verificando a autenticação correta das credenciais. Além disso, desenvolvemos o módulo de edição de saldo (balance editor), que permite atualizar o saldo dos usuários no banco de dados de forma segura e controlada.
+
+
+## 14/04
+
+Hoje implementamos as interfaces para todos os controllers do sistema (balance_editor, login_creator e user_register), padronizando a comunicação entre as camadas. Em seguida, focamos no desenvolvimento das views, criando os componentes http_types (response e request) para padronizar as requisições e respostas HTTP. Também desenvolvemos a interface base para as views e implementamos as views específicas: user_register_view, login_creator_view e balance_editor_view. Até o momento, apenas os testes unitários do user_register_view foram concluídos. Amanhã, daremos continuidade implementando os testes unitários para login_creator_view e balance_editor_view.
