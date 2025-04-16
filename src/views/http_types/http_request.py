@@ -6,10 +6,10 @@ class HttpRequest:
         self,
         body: Dict = None,
         headers: Dict = None,
-        param: Dict = None,
+        params: Dict = None,
         token_info: Dict = None,
     ) -> None:
         self.body = body
         self.headers = headers
-        self.param = param
+        self.params = params
         self.token_info = token_info
