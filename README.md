@@ -19,3 +19,8 @@ Hoje implementamos e executamos testes unitários para o sistema de login de usu
 ## 14/04
 
 Hoje implementamos as interfaces para todos os controllers do sistema (balance_editor, login_creator e user_register), padronizando a comunicação entre as camadas. Em seguida, focamos no desenvolvimento das views, criando os componentes http_types (response e request) para padronizar as requisições e respostas HTTP. Também desenvolvemos a interface base para as views e implementamos as views específicas: user_register_view, login_creator_view e balance_editor_view. Até o momento, apenas os testes unitários do user_register_view foram concluídos. Amanhã, daremos continuidade implementando os testes unitários para login_creator_view e balance_editor_view.
+
+
+## 15/04
+
+Hoje, criamos os compositores para balance_editor, login_creator e user_register. Em seguida, desenvolvemos a nossa aplicação principal, que contém o arquivo server.py, onde utilizamos o blueprint do Flask. Criamos uma rota chamada bank_account_routes, que permite o registro de usuários, criptografando as senhas antes de armazená-las no banco de dados. Também implementamos a funcionalidade de login, que gera um token. Para a atualização do saldo (new_balance), planejamos adicionar uma proteção amanhã, de modo que apenas usuários com um token de login válido possam realizar essa atualização no banco de dados.
