@@ -30,6 +30,7 @@ def balance_editor(user_id: str):
         body=request.json or {},
         params={"user_id": user_id},
         token_info=token_information,
+        headers=request.headers,
     )
     http_response = balance_editor_composer().handle(http_request)
     return jsonify(http_response.body), http_response.status_code
