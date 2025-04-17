@@ -24,3 +24,8 @@ Hoje implementamos as interfaces para todos os controllers do sistema (balance_e
 ## 15/04
 
 Hoje, criamos os compositores para balance_editor, login_creator e user_register. Em seguida, desenvolvemos a nossa aplicação principal, que contém o arquivo server.py, onde utilizamos o blueprint do Flask. Criamos uma rota chamada bank_account_routes, que permite o registro de usuários, criptografando as senhas antes de armazená-las no banco de dados. Também implementamos a funcionalidade de login, que gera um token. Para a atualização do saldo (new_balance), planejamos adicionar uma proteção amanhã, de modo que apenas usuários com um token de login válido possam realizar essa atualização no banco de dados.
+
+
+## 16/04
+
+Hoje, implementamos um middleware para a edição do saldo, que permite que apenas o usuário correspondente ao user_id possa modificar o new_balance de sua própria conta."
