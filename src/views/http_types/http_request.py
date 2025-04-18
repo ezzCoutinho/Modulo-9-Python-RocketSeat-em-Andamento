@@ -1,13 +1,14 @@
-from typing import Dict
+from typing import Dict, Optional
+from werkzeug.datastructures import Headers
 
 
 class HttpRequest:
     def __init__(
         self,
-        body: Dict = None,
-        headers: Dict = None,
-        params: Dict = None,
-        token_info: Dict = None,
+        body: Optional[Dict] = None,
+        headers: Optional[Headers] = None,
+        params: Optional[Dict] = None,
+        token_info: Optional[Dict] = None,
     ) -> None:
         self.body = body
         self.headers = headers
