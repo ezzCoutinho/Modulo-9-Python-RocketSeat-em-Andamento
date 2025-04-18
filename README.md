@@ -29,3 +29,7 @@ Hoje, criamos os compositores para balance_editor, login_creator e user_register
 ## 16/04
 
 Hoje, implementamos um middleware para a edição do saldo, que permite que apenas o usuário correspondente ao user_id possa modificar o new_balance de sua própria conta."
+
+
+## 17/04
+Hoje, concluímos o módulo, adicionando tipos de erros ao nosso projeto e atualizando alguns erros genéricos para erros mais específicos. Também implementamos um tratador de erros que lida com requisições. Os erros tratados são: http_bad_request, http_not_found e http_unauthorized.
